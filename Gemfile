@@ -47,3 +47,6 @@ group :production do
   gem 'rails_12factor'
   gem 'pg'
 end
+
+# Rack-Cache als Vorspeicher für Heroku
+gem 'rack-cache'
