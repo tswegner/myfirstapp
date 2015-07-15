@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Myfirstapp</title>
+  <title>BoBike</title>
+
+  <!-- CSS-Styles -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <!-- JavaScript -->
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>  
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <h1>Welcome to Bodensee Bikes</h1>
+  <h2>Your place to find used bikes in the Bodensee Area</h2>
+  <%= yield %>  
 </body>
 </html>
