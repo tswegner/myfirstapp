@@ -10,10 +10,50 @@
  *
  * Summary:
  *
- *  0. Product Table
+ *  1. Product Index
+ *  2. Product Show
  *    
  */
 
 /* ==========================================================================
-   0. Product Table
+   1. Product Index
    ========================================================================== */
+.product-index {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.product-table {
+  width: 100%;
+}
+
+.product-table th {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+}
+
+.product-table td {
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: top; 
+  border-bottom: 1px solid black;
+}
+
+/* ==========================================================================
+   2. Product Show
+   ========================================================================== */
+.product-show {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.product-show p {
+  width: 60%;
+}
+
