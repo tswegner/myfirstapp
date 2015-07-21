@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+
+/**
+ * Description: Basic CSS for THE STORE online webshop.
+ * Version: 1.0.0
+ * Last update: 2015/07/21
+ * Author: Tobias Wegner <tobiassimonwegner@gmail.com>
+ *
+ * Summary:
+ *
+ *  0. General
+ *    - 0.1. Fonts
+ *    - 0.2. TYPE ELEMENT
+ *  1. Header
+ *    - 1.1. TYPE ELEMENT
+ *    - 1.2. TYPE ELEMENT
+ */
+
+/* ==========================================================================
+   0. General
+   ========================================================================== */
+
+/* 0.1. Fonts
+   ========================================================================== */
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Exo', sans-serif; 
+}
+
+p,
+a,
+li {
+  font-family: 'Merriweather', serif;
+}
+
+/* 0.2. TYPE ELEMENT
+   ========================================================================== */
+
+/* ==========================================================================
+   1. Header
+   ========================================================================== */
+.header {
+  background-color: rgba(0,85,164,1);
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.headlines {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.headlines h1 {
+  font-size: 50px;
+}
+
+.headlines h2 {
+  font-size: 26px;
+}
