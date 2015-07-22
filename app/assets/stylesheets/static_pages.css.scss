@@ -2,7 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// General
 .static-pages-body {
   width: 80%;
   margin: 0 auto;
+}
+
+// Carousel
+.carousel-caption {
+  color: rgba(0,85,164,1);
+}
+
+#lp-carousel li {
+  background-color: #fff;
+  border: 1px solid rgba(0,84,164,1);
+}
+
+#lp-carousel li.active {
+  background-color: rgba(0,84,164,0.5);
+  border: 1px solid rgba(0,84,164,1);
 }
