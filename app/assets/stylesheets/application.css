@@ -26,8 +26,8 @@
  *    - 0.1. Fonts
  *    - 0.2. TYPE ELEMENT
  *  1. Header
- *    - 1.1. TYPE ELEMENT
- *    - 1.2. TYPE ELEMENT
+ *    - 1.1. Navbar
+ *  2. Footer
  */
 
 /* ==========================================================================
@@ -60,7 +60,6 @@ li {
 .header {
   background-color: rgba(0,85,164,1);
   color: white;
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -77,4 +76,83 @@ li {
 .headlines h2 {
   font-size: 26px;
   margin-bottom: 0px;
+}
+
+/* 1.1. Navbar
+   ========================================================================== */
+.container-fluid {
+  background-color: rgba(0,85,164,0);
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 80%;
+}
+
+.nav {
+  float: right;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
+}
+
+.navbar-inverse {
+  background-color: rgba(0,85,164,0);
+  border-color: rgba(0,85,164,0);
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: black;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  color: black;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover {
+  color: black;
+}
+
+
+/* ==========================================================================
+   2. Footer
+   ========================================================================== */
+.app_footer {
+  background-color: rgba(0,85,164,1);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.footer-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.copyright {
+  float: left;
+}
+
+.copyright p {
+  font-family: 'Exo', sans-serif;
+}
+
+.previous-page {
+  background-color: rgba(0,85,164,1);
+  float: right;
+}
+
+.previous-page a {
+  color: white;
+}
+
+.previous-page a:hover {
+  background-color: rgba(0,85,164,1);
 }

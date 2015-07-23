@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>THE STORE</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>THE STORE</title>
 
-  <!-- Google Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Exo:300,400,500' rel='stylesheet' type='text/css'>
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo:300,400,500' rel='stylesheet' type='text/css'>
 
-  <!-- CSS-Styles -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <!-- CSS-Styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
-  <!-- JavaScript -->
-  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>  
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <!-- JavaScript -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>  
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div class="header">
-    <div class="headlines">
-      <h1>THE STORE</h1>
-      <h2>Experience the place where everything is possible...</h2>
-    </div>
-  </div>
-  <%= yield %>  
-</body>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="navbar navbar-inverse" id="navbar" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" 
+            data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><%= link_to "Home", static_pages_index_path %></li>
+              <li><%= link_to "About", static_pages_about_path %></li>
+              <li><%= link_to "Contact", static_pages_contact_path %></li>
+            </ul>
+          </div> <!-- navbar-collapse -->
+        </div> <!-- /continer-fluid -->
+      </div> <!-- /navbar -->
+      <div class="headlines">
+        <h1>THE STORE</h1>
+        <h2>Experience the place where everything is possible...</h2>
+      </div>
+    </nav>
+    
+    <%= yield %>  
+    <footer class="app_footer">
+      <div class="footer-content">
+        <div class="copyright">
+          <p>&copy; THE STORE Ltd. 2015 </p>
+        </div>
+        <div class="previous-page">
+          <%= %> <!-- Hier soll ein redirect zur Seite/zuletzt besuchten url rein, ich bekomms aber nicht hin. Ideas? -->
+         </div>
+      </div>
+    </footer>
+  </body>
 </html>
