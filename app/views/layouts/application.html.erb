@@ -28,7 +28,15 @@
           <li id="first-site"><%= link_to "Home", static_pages_index_path %></li>
           <li><%= link_to "About", static_pages_about_path %></li>
           <li><%= link_to "Contact", static_pages_contact_path %></li>
+          <li><%= link_to "Products", products_path %></li>
         </ul>
+        <div>
+          <%= form_tag("/products", :method => "get", :class => "searchbox") do %>
+            <%= label_tag(:q, "", :id => "searchtext") %>
+            <%= text_field_tag(:q, nil, :id => "searchfield") %>
+            <%= submit_tag("Search", :id => "searchbutton") %>
+          <% end %>
+        </div>
       </div>
       <div class="headlines">
         <h1>THE STORE</h1>
