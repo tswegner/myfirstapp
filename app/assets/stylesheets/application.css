@@ -80,22 +80,28 @@ li {
 
 /* 1.1. Navbar
    ========================================================================== */
-.container-fluid {
-  background-color: rgba(0,85,164,0);
-  padding-right: 0px;
-  padding-left: 0px;
+.navigation {
   width: 80%;
+  margin: 0 auto;
 }
 
-.nav {
+.navlist {
   float: right;
+  width: 100%;
+  padding-left: 0px;
+  border-bottom: 1px solid white;
 }
 
-.navbar {
-  margin-bottom: 0px;
+.navlist li {
+  float: left;
+  display: block;
+  position: relative;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navlist>li>a {
+  display: block;
+  position: relative;
+  padding: 10px 15px;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -103,23 +109,15 @@ li {
   font-size: 14px;
 }
 
-.navbar-inverse {
-  background-color: rgba(0,85,164,0);
-  border-color: rgba(0,85,164,0);
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
+.navlist>li>a:hover {
   color: black;
+  background-color: rgba(0,85,164,1);
+  text-decoration: none;
 }
 
-.navbar-inverse .navbar-nav>.active>a {
-  color: black;
+#first-site a {
+  padding-left: 0px;
 }
-
-.navbar-inverse .navbar-nav>.active>a:hover {
-  color: black;
-}
-
 
 /* ==========================================================================
    2. Footer
