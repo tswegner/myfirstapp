@@ -83,10 +83,11 @@ li {
 .navigation {
   width: 80%;
   margin: 0 auto;
+  min-height: 50px;
 }
 
 .navlist {
-  float: right;
+  float: left;
   width: 100%;
   padding-left: 0px;
   border-bottom: 1px solid white;
