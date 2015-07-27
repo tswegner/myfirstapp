@@ -50,3 +50,6 @@ end
 
 # Rack-Cache als Vorspeicher für Heroku
 gem 'rack-cache'
+
+# Devise for User Authentification
+gem 'devise'
