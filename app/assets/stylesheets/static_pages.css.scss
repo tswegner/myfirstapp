@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-// Carousel
+// Landing Page
 .carousel-caption {
   color: rgba(0,85,164,1);
 }
@@ -26,4 +26,16 @@
 #lp-carousel li.active {
   background-color: rgba(0,84,164,0.5);
   border: 1px solid rgba(0,84,164,1);
+}
+
+// Contact Page
+.contact-page {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+// Thank You Page
+.thank-you-page {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

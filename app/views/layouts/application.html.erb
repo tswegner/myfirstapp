@@ -22,6 +22,8 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+
+<!-- ===== Navbar ===== -->
     <nav class="header">
       <div class="navigation">
         <ul class="navlist">
@@ -43,8 +45,11 @@
         <h2>Experience the place where everything is possible...</h2>
       </div>
     </nav>
-    
+
+<!-- ===== Yield ===== -->    
     <%= yield %>  
+
+<!-- ===== Footer ===== -->
     <footer class="app_footer">
       <div class="footer-content">
         <div class="copyright">
@@ -55,5 +60,6 @@
          </div>
       </div>
     </footer>
+
   </body>
 </html>

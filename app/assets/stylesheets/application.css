@@ -80,6 +80,37 @@ li {
   margin-top: 10px;
 }
 
+.searchbox {
+  float: right;
+  padding-top: 7px;
+}
+
+#searchtext {
+  color: white;
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+#searchfield {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Exo', sans-serif;
+  border-color: rgba(0,85,164,1);
+}
+
+#searchbutton {
+  color: rgba(0,85,164,1);
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  border-color: rgba(0,85,164,1);
+}
+
 /* 1.1. Navbar
    ========================================================================== */
 .navigation {
@@ -121,37 +152,6 @@ li {
 
 #first-site a {
   padding-left: 0px;
-}
-
-.searchbox {
-  float: right;
-  padding-top: 7px;
-}
-
-#searchtext {
-  color: white;
-  font-family: 'Exo', sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 400;
-}
-
-#searchfield {
-  color: black;
-  background-color: white;
-  border-radius: 5px;
-  font-family: 'Exo', sans-serif;
-  border-color: rgba(0,85,164,1);
-}
-
-#searchbutton {
-  color: rgba(0,85,164,1);
-  background-color: white;
-  border-radius: 5px;
-  font-family: 'Exo', sans-serif;
-  font-weight: 700;
-  border-color: rgba(0,85,164,1);
 }
 
 /* ==========================================================================
