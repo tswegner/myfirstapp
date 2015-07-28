@@ -53,3 +53,6 @@ gem 'rack-cache'
 
 # Devise for User Authentification
 gem 'devise'
+
+# cancancan for Authorization
+gem 'cancancan'
