@@ -15,7 +15,7 @@ class StaticPagesController < ApplicationController
 #      :to => 'tobiassimonwegner@gmail.com', 
 #      :subject => "Contact message from #{@name}", 
 #      :body => @message).deliver
-    UserMailer.contact_form(@email, @name, @subject).deliver   
+    UserMailer.contact_form(@email, @name, @message).deliver   
   end
   
 end
