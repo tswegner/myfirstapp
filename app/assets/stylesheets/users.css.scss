@@ -1,3 +1,72 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/**
+ * Description: CSS Code for the products in THE STORE.
+ * Version: 1.0.0
+ * Last update: 2015/07/21
+ * Author: Tobias Wegner <tobiassimonwegner@gmail.com>
+ *
+ * Summary:
+ *
+ *  1. Product Index
+ *  2. Product Show
+ *  3. Product Edit  
+ *  4. Product New
+ *
+ */
+
+/* ==========================================================================
+   1. Product Index
+   ========================================================================== */
+.users-index {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.users-table {
+  width: 100%;
+}
+
+.users-table th {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+}
+
+.users-table td {
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: top; 
+  border-bottom: 1px solid black;
+}
+
+/* ==========================================================================
+   2. Product Show
+   ========================================================================== */
+.users-show {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.users-show p {
+  width: 60%;
+}
+
+/* ==========================================================================
+   3. Product Edit
+   ========================================================================== */
+.users-edit {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   4. Product New
+   ========================================================================== */
+.users-new {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
