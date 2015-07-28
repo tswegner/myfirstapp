@@ -58,7 +58,7 @@ li {
 /* ==========================================================================
    1. Header
    ========================================================================== */
-.header {
+.navbar {
   background-color: rgba(0,85,164,1);
   color: white;
   padding-bottom: 30px;
@@ -82,7 +82,6 @@ li {
 }
 
 .searchbox {
-  float: right;
   padding-top: 7px;
 }
 
@@ -112,29 +111,35 @@ li {
   border-color: rgba(0,85,164,1);
 }
 
+@media (min-width: 768px) {
+  .searchbox {
+  float: right;
+  }
+}
+
 /* 1.1. Navbar
    ========================================================================== */
-.navigation {
+.container-fluid {
   width: 80%;
   margin: 0 auto;
   min-height: 40px;
   border-bottom: 1px solid white;
 }
 
-.navlist {
+.nav {
   float: left;
   width: 60%;
   padding-left: 0px;
   margin-bottom: 0px;
 }
 
-.navlist li {
+.nav li {
   float: left;
   display: block;
   position: relative;
 }
 
-.navlist>li>a {
+.nav>li>a {
   display: block;
   position: relative;
   padding: 10px 15px;
@@ -145,14 +150,25 @@ li {
   font-size: 14px;
 }
 
-.navlist>li>a:hover {
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.nav>li>a:hover {
   color: black;
   background-color: rgba(0,85,164,1);
   text-decoration: none;
 }
 
-#first-site a {
+@media (min-width: 768px) {
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #first-site a {
   padding-left: 0px;
+  }
 }
 
 /* ==========================================================================

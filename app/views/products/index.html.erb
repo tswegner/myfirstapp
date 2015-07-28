@@ -1,22 +1,24 @@
 <div class="product-index">
   <h1>List of Products</h1>
 
-  <table class="product-table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Image</th>
-        <th>Colour</th>
-        <th>Price</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
+  <div class="table-responsive">
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Image</th>
+          <th>Colour</th>
+          <th>Price</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-    <tbody>
-        <%= render @products %>
-    </tbody>
-  </table>
+      <tbody>
+          <%= render @products %>
+      </tbody>
+    </table>
+  </div>
 
   <br>
 
