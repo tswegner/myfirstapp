@@ -83,6 +83,7 @@ li {
 
 .searchbox {
   padding-top: 7px;
+  padding-bottom: 10px;
 }
 
 #searchtext {
@@ -158,6 +159,18 @@ li {
   color: black;
   background-color: rgba(0,85,164,1);
   text-decoration: none;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: rgba(0,85,164,1);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
 }
 
 @media (min-width: 768px) {
