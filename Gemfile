@@ -56,3 +56,6 @@ gem 'devise'
 
 # cancancan for Authorization
 gem 'cancancan'
+
+# will_paginate for pagination of e.g. comments
+gem 'will_paginate'
