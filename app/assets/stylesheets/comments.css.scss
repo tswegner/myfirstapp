@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// General
+.comments_row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+// Pagination
 .digg_pagination {
   background: white;
   cursor: default;
