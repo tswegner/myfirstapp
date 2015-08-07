@@ -52,8 +52,12 @@ li {
   font-family: 'Merriweather', serif;
 }
 
-/* 0.2. TYPE ELEMENT
+/* 0.2. Bootstrap overwrites
    ========================================================================== */
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
 
 /* ==========================================================================
    1. Header
