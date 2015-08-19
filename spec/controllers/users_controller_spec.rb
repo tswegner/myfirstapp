@@ -3,8 +3,9 @@ require 'rails_helper'
 describe UsersController, :type => :controller do
   before(:each) do
       #@request.env["devise.mapping"] = Devise.mappings[:user]
-      @user = User.create(email: "max@muller.de", password: "12345678")
+      @user = create(:user)
       sign_in @user
+      get 'index', id: @user.id
     end
 
   describe "GET #index" do

@@ -61,3 +61,6 @@ gem 'cancancan'
 
 # will_paginate for pagination of e.g. comments
 gem 'will_paginate'
+
+# factories for testing
+gem 'factory_girl_rails'
