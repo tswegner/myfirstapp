@@ -68,3 +68,6 @@ gem 'will_paginate'
 
 # factories for testing
 gem 'factory_girl_rails'
+
+# Stripe Payment solution
+gem 'stripe'
