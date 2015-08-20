@@ -2,9 +2,9 @@
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
     data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-    data-amount="2000"
-    data-name="Demo Site"
-    data-description="2 widgets ($20.00)"
+    data-amount="<%= product.price %>"
+    data-name="<%= product.name %>"
+    data-description=""
     data-image="/square-image.png">
   </script>
 </form>
