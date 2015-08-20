@@ -1,40 +1,46 @@
 <div class="product-show">
   <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Name:</strong>
-    <br>
-    <%= @product.name %>
-  </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <p class="product-image">
+          <%= image_tag @product.image_url %>
+        </p>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <p>
+          <strong>Name:</strong>
+          <br>
+          <%= @product.name %>
+        </p>
 
-  <p>
-    <strong>Description:</strong>
-    <br>
-    <%= @product.description %>
-  </p>
+        <p>
+          <strong>Description:</strong>
+          <br>
+          <%= @product.description %>
+        </p>
 
-  <p>
-    <strong>Image:</strong>
-    <br>
-    <%= @product.image_url %>
-  </p>
+        <p>
+          <strong>Colour:</strong>
+          <br>
+          <%= @product.colour %>
+        </p>
 
-  <p>
-    <strong>Colour:</strong>
-    <br>
-    <%= @product.colour %>
-  </p>
+        <p>
+          <strong>Price:</strong>
+          <br>
+          <%= @product.price %>
+        </p>
 
-  <p>
-    <strong>Price:</strong>
-    <br>
-    <%= @product.price %>
-  </p>
-
-  <p>
-    <strong>Average Rating:</strong> 
-    <div class="rated" data-score="<%= @product.average_rating %>"></div> 
-  </p>
+        <p>
+          <strong>Average Rating:</strong> 
+          <div class="rated" data-score="<%= @product.average_rating %>"></div> 
+        </p>
+      </div>
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+  
 
   <%= form_tag "/payments/create" do %>
     <%= render partial: "shared/stripe_checkout_button" %>

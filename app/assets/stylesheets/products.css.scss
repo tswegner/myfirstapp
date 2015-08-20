@@ -55,10 +55,8 @@
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
-  .product-show p {
-    width: 60%;
-  }
+.product-image img {
+  width: 100%;
 }
 /* ==========================================================================
    3. Product Edit
