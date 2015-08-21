@@ -12,6 +12,7 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem 'spork-rails'
   gem 'guard-spork'
+  gem 'byebug'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
