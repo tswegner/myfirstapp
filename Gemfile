@@ -73,5 +73,6 @@ gem 'factory_girl_rails'
 # Stripe Payment solution
 gem 'stripe'
 
-# Security Shit
+# Security Shit + nokogiri for fixes
 gem 'brakeman'
+gem 'nokogiri'
