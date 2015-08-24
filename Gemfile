@@ -72,3 +72,6 @@ gem 'factory_girl_rails'
 
 # Stripe Payment solution
 gem 'stripe'
+
+# Security Shit
+gem 'brakeman'
