@@ -3,6 +3,7 @@ class PaymentsController < ApplicationController
   def create
     token = params[:stripeToken]
     @product = Product.find(params[:product_id])
+    @user = current_user
     # Create the charge on Stripe's servers - this will charge the user's card
     begin
       charge = Stripe::Charge.create(
@@ -19,5 +20,6 @@ class PaymentsController < ApplicationController
       flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
     end
     redirect_to product_path(@product)
+    UserMailer.confirmation_mail(@user, @product).deliver
   end
 end
