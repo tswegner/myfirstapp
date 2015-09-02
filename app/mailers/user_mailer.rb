@@ -7,4 +7,11 @@ class UserMailer < ActionMailer::Base
       :to => 'tobiassimonwegner@gmail.com',
       :subject => "Contact Message from #{@name}")
   end
+
+  def signup_mail(user)
+    @user = user
+    mail(:from => 'tobiassimonwegner@gmail.com',
+      :to => user.email,
+      :subject => "Welcome to THE STORE!")
+  end
 end

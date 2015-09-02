@@ -6,4 +6,9 @@ class User < ActiveRecord::Base
          :timeoutable
   has_many :orders
   has_many :payments
+  after_create :signup_mail
+
+  def signup_mail
+    UserMailer.signup_mail(self).deliver
+  end
 end
