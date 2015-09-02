@@ -76,3 +76,6 @@ gem 'stripe'
 # Security Shit + nokogiri for fixes
 gem 'brakeman'
 gem 'nokogiri'
+
+# Storing Caches
+gem 'dalli'
